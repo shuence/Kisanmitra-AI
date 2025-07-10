@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, Linkedin, User } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 
 const teamMembers = [
   {
@@ -7,24 +6,24 @@ const teamMembers = [
     role: "Flutter & Full Stack Developer",
     description: "Expert in mobile app development with Flutter and full-stack web development. Specializes in creating seamless user experiences and robust backend systems.",
     avatar: "SP",
-    github: "#",
-    linkedin: "#"
+    github: "https://github.com/shuence",
+    linkedin: "https://www.linkedin.com/in/shuence/"
   },
   {
     name: "Priyanshu Agrawal",
     role: "AI Agentic AI Developer",
     description: "AI specialist focused on developing intelligent agentic systems. Expert in Google Cloud AI/ML services and creating conversational AI solutions.",
     avatar: "PA",
-    github: "#",
-    linkedin: "#"
+    github: "",
+    linkedin: "https://www.linkedin.com/in/thisispriyanshu/"
   },
   {
     name: "Sanika Chavan",
     role: "AI Engineer",
     description: "Machine Learning engineer with expertise in computer vision and natural language processing. Passionate about applying AI to solve real-world agricultural challenges.",
     avatar: "SC",
-    github: "#",
-    linkedin: "#"
+    github: "https://github.com/sanika391",
+    linkedin: "https://www.linkedin.com/in/sanikachavan/"
   }
 ];
 
@@ -85,22 +84,10 @@ const Team = () => {
             <h3 className="text-2xl font-bold text-foreground mb-4">
               🏆 Team Achievements
             </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div className="grid md:grid-cols-1 gap-6 text-center justify-center">
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">🥉</div>
                 <p className="text-sm text-muted-foreground">Google Solution Challenge 2024<br/>Global Top 3</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">🏅</div>
-                <p className="text-sm text-muted-foreground">Smart India Hackathon 2023<br/>Winner - Agriculture</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">🌟</div>
-                <p className="text-sm text-muted-foreground">Microsoft Imagine Cup 2023<br/>National Semifinals</p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary mb-2">💡</div>
-                <p className="text-sm text-muted-foreground">Facebook Developer Challenge<br/>Top 10 India</p>
               </div>
             </div>
           </div>

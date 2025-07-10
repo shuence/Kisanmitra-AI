@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Rocket, Mail, Phone, MapPin, Wheat, CheckCircle } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Waitlist: React.FC = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -45,11 +47,11 @@ const Waitlist: React.FC = () => {
             <div className="flex items-center justify-center gap-4 mb-6">
               <Rocket className="w-10 h-10 lg:w-12 lg:h-12 text-primary" />
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textPrimary">
-                Early Access for Farmers & Supporters
+                {t('earlyAccessForFarmers')}
               </h2>
             </div>
             <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed">
-              Be among the first to experience the future of farming with AI assistance
+              {t('beAmongFirst')}
             </p>
           </div>
           
@@ -59,7 +61,7 @@ const Waitlist: React.FC = () => {
                 <form onSubmit={handleSubmit} className="space-y-6 lg:space-y-8">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-textPrimary mb-3">
-                      Full Name *
+                      {t('fullName')} {t('required')}
                     </label>
                     <input
                       type="text"
@@ -69,13 +71,13 @@ const Waitlist: React.FC = () => {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-lg"
-                      placeholder="Enter your full name"
+                      placeholder={t('fullNamePlaceholder')}
                     />
                   </div>
                   
                   <div>
                     <label htmlFor="phone" className="block text-sm font-semibold text-textPrimary mb-3">
-                      Phone Number *
+                      {t('phoneNumber')} {t('required')}
                     </label>
                     <div className="relative">
                       <Phone className="absolute left-4 top-4 w-5 h-5 text-gray-400" />
@@ -87,14 +89,14 @@ const Waitlist: React.FC = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200 text-lg"
-                        placeholder="+91 98765 43210"
+                        placeholder={t('phonePlaceholder')}
                       />
                     </div>
                   </div>
                   
                   <div>
                     <label htmlFor="language" className="block text-sm font-semibold text-textPrimary mb-3">
-                      Preferred Language *
+                      {t('preferredLanguage')} {t('required')}
                     </label>
                     <select
                       id="language"

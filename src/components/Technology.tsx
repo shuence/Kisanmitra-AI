@@ -1,7 +1,9 @@
 import React from 'react';
 import { Zap, Cloud, Shield, Cpu } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Technology: React.FC = () => {
+  const { t } = useLanguage();
   const technologies = [
     { name: "Gemini AI", logo: "🤖", description: "Advanced conversational AI for natural language understanding" },
     { name: "Vertex AI Vision", logo: "👁️", description: "Image recognition for crop disease detection" },
@@ -20,11 +22,11 @@ const Technology: React.FC = () => {
           <div className="flex items-center justify-center gap-4 mb-6">
             <Zap className="w-10 h-10 lg:w-12 lg:h-12 text-accent" />
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-              Built on Cutting-Edge Technology
+              {t('builtOnCuttingEdgeTech')}
             </h2>
           </div>
           <p className="text-xl lg:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            Using Google's advanced AI, KisanMitra delivers intelligence, speed, and reliability—even in remote regions.
+            {t('usingGoogleAdvancedAI')}
           </p>
         </div>
         
@@ -45,9 +47,9 @@ const Technology: React.FC = () => {
             <div className="bg-primary/20 rounded-full w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center mx-auto">
               <Cpu className="w-10 h-10 lg:w-12 lg:h-12 text-primary" />
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold">Advanced AI Processing</h3>
+            <h3 className="text-xl lg:text-2xl font-semibold">{t('advancedAIProcessing')}</h3>
             <p className="text-gray-300 leading-relaxed">
-              Powered by Google's Gemini AI for accurate crop diagnosis and intelligent recommendations
+              {t('advancedAIDesc')}
             </p>
           </div>
           
@@ -55,9 +57,9 @@ const Technology: React.FC = () => {
             <div className="bg-links/20 rounded-full w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center mx-auto">
               <Cloud className="w-10 h-10 lg:w-12 lg:h-12 text-links" />
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold">Cloud-Scale Reliability</h3>
+            <h3 className="text-xl lg:text-2xl font-semibold">{t('cloudScaleReliability')}</h3>
             <p className="text-gray-300 leading-relaxed">
-              Built on Google Cloud infrastructure for 99.9% uptime and global accessibility
+              {t('cloudScaleDesc')}
             </p>
           </div>
           
@@ -65,9 +67,9 @@ const Technology: React.FC = () => {
             <div className="bg-accent/20 rounded-full w-20 h-20 lg:w-24 lg:h-24 flex items-center justify-center mx-auto">
               <Shield className="w-10 h-10 lg:w-12 lg:h-12 text-accent" />
             </div>
-            <h3 className="text-xl lg:text-2xl font-semibold">Secure & Private</h3>
+            <h3 className="text-xl lg:text-2xl font-semibold">{t('securePrivate')}</h3>
             <p className="text-gray-300 leading-relaxed">
-              Enterprise-grade security with data encryption and privacy protection for farmers
+              {t('securePrivateDesc')}
             </p>
           </div>
         </div>

@@ -10,23 +10,26 @@ import Testimonials from './components/Testimonials';
 import Team from './components/Team';
 import Waitlist from './components/Waitlist';
 import Footer from './components/Footer';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <Features />
-      <VoiceFirst />
-      <LiveInsights />
-      <SchemeNavigator />
-      <SequentialDemo />
-      <Technology />
-      <Testimonials />
-      <Team />
-      <Waitlist />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-background">
+        <Header />
+        <Hero />
+        <Features />
+        <VoiceFirst />
+        <LiveInsights />
+        <SchemeNavigator />
+        <SequentialDemo />
+        <Technology />
+        <Testimonials />
+        <Team />
+        <Waitlist />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Mic, Play, Mail } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Hero: React.FC = () => {
+  const { t } = useLanguage();
   const scrollToWaitlist = () => {
     const element = document.getElementById('waitlist');
     if (element) {
@@ -25,18 +27,17 @@ const Hero: React.FC = () => {
             <div className="space-y-6">
               <div className="space-y-2">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-textPrimary leading-tight">
-                  <span className="text-primary">KisaanMitra</span> AI
+                  <span className="text-primary">{t('heroTitleStyled')}</span> AI
                 </h1>
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-500 font-medium italic">
-                  An Expert in Every Farmer's Pocket. A Friend for Life.
+                  {t('heroTagline')}
                 </p>
               </div>
               <p className="text-xl sm:text-2xl lg:text-3xl text-gray-700 font-medium leading-relaxed">
-                Empowering Small-Scale Farmers with the Intelligence of AI
+                {t('heroSubtitle')}
               </p>
               <p className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl">
-                Your AI-powered farming assistant: diagnose crop diseases, get real-time mandi prices, 
-                understand government schemes, and more—through simple voice commands in your language.
+                {t('heroDescription')}
               </p>
             </div>
             
@@ -46,14 +47,14 @@ const Hero: React.FC = () => {
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-semibold text-lg lg:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3"
               >
                 <Play className="w-5 h-5 lg:w-6 lg:h-6" />
-                Try Demo
+                {t('tryDemo')}
               </button>
               <button 
                 onClick={scrollToWaitlist}
                 className="bg-white hover:bg-gray-50 text-primary border-2 border-primary px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-semibold text-lg lg:text-xl transition-all duration-300 hover:shadow-lg flex items-center justify-center gap-3"
               >
                 <Mail className="w-5 h-5 lg:w-6 lg:h-6" />
-                Join Waitlist
+                {t('joinWaitlist')}
               </button>
             </div>
 
@@ -61,19 +62,19 @@ const Hero: React.FC = () => {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-8 text-sm text-gray-500">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>100+ Farmers Interested</span>
+                <span>100+ {t('farmersInterested')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
-                <span>Google Cloud Powered</span>
+                <span>{t('googleCloudPowered')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-links rounded-full"></div>
-                <span>Built for Indian Farmers</span>
+                <span>{t('builtForIndianFarmers')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <span>Hackathon Winner</span>
+                <span>{t('hackathonWinner')}</span>
               </div>
             </div>
           </div>

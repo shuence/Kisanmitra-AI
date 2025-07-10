@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Sprout, Phone, Mail } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,49 +49,50 @@ const Header: React.FC = () => {
               onClick={() => scrollToSection('features')}
               className="text-textPrimary hover:text-primary transition-colors font-medium"
             >
-              Features
+              {t('features')}
             </button>
             <button 
-              onClick={() => scrollToSection('voice-first')}
+              onClick={() => scrollToSection('demo')}
               className="text-textPrimary hover:text-primary transition-colors font-medium"
             >
-              Voice AI
+              {t('demo')}
             </button>
             <button 
-              onClick={() => scrollToSection('insights')}
+              onClick={() => scrollToSection('technology')}
               className="text-textPrimary hover:text-primary transition-colors font-medium"
             >
-              Market Insights
+              {t('technology')}
             </button>
             <button 
-              onClick={() => scrollToSection('schemes')}
+              onClick={() => scrollToSection('team')}
               className="text-textPrimary hover:text-primary transition-colors font-medium"
             >
-              Schemes
+              {t('team')}
             </button>
             <button 
-              onClick={() => scrollToSection('testimonials')}
+              onClick={() => scrollToSection('contact')}
               className="text-textPrimary hover:text-primary transition-colors font-medium"
             >
-              Stories
+              {t('contact')}
             </button>
           </nav>
 
           {/* Desktop CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
+            <LanguageSwitcher />
             <a 
               href="tel:+918000000000" 
               className="flex items-center gap-2 text-textPrimary hover:text-primary transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span className="text-sm font-medium">Support</span>
+              <span className="text-sm font-medium">{t('footerSupport')}</span>
             </a>
             <button 
               onClick={() => scrollToSection('waitlist')}
               className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
-              Join Waitlist
+              {t('joinWaitlist')}
             </button>
           </div>
 
@@ -109,46 +113,49 @@ const Header: React.FC = () => {
                 onClick={() => scrollToSection('features')}
                 className="block w-full text-left px-4 py-2 text-textPrimary hover:text-primary hover:bg-gray-50 transition-colors font-medium"
               >
-                Features
+                {t('features')}
               </button>
               <button 
-                onClick={() => scrollToSection('voice-first')}
+                onClick={() => scrollToSection('demo')}
                 className="block w-full text-left px-4 py-2 text-textPrimary hover:text-primary hover:bg-gray-50 transition-colors font-medium"
               >
-                Voice AI
+                {t('demo')}
               </button>
               <button 
-                onClick={() => scrollToSection('insights')}
+                onClick={() => scrollToSection('technology')}
                 className="block w-full text-left px-4 py-2 text-textPrimary hover:text-primary hover:bg-gray-50 transition-colors font-medium"
               >
-                Market Insights
+                {t('technology')}
               </button>
               <button 
-                onClick={() => scrollToSection('schemes')}
+                onClick={() => scrollToSection('team')}
                 className="block w-full text-left px-4 py-2 text-textPrimary hover:text-primary hover:bg-gray-50 transition-colors font-medium"
               >
-                Schemes
+                {t('team')}
               </button>
               <button 
-                onClick={() => scrollToSection('testimonials')}
+                onClick={() => scrollToSection('contact')}
                 className="block w-full text-left px-4 py-2 text-textPrimary hover:text-primary hover:bg-gray-50 transition-colors font-medium"
               >
-                Stories
+                {t('contact')}
               </button>
               <div className="px-4 py-2 border-t border-gray-200 mt-2 pt-4">
+                <div className="mb-3">
+                  <LanguageSwitcher />
+                </div>
                 <a 
                   href="tel:+918000000000" 
                   className="flex items-center gap-2 text-textPrimary hover:text-primary transition-colors mb-3"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="font-medium">Support</span>
+                  <span className="font-medium">{t('footerSupport')}</span>
                 </a>
                 <button 
                   onClick={() => scrollToSection('waitlist')}
                   className="w-full bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2"
                 >
                   <Mail className="w-4 h-4" />
-                  Join Waitlist
+                  {t('joinWaitlist')}
                 </button>
               </div>
             </nav>

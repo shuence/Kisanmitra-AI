@@ -8,38 +8,40 @@ import {
   Calendar,
   ChevronRight
 } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Features: React.FC = () => {
+  const { t } = useLanguage();
   const features = [
     {
       icon: Stethoscope,
-      title: "Crop Disease Detection",
-      description: "Upload a photo and get instant AI diagnosis with treatment recommendations in your language using Google Vision AI"
+      title: t('cropDetectionTitle'),
+      description: t('cropDetectionDesc')
     },
     {
       icon: TrendingUp,
-      title: "Real-time Mandi Prices",
-      description: "Access current market rates and AI-powered price forecasting for better selling decisions across 28 Indian states"
+      title: t('marketPricesTitle'),
+      description: t('marketPricesDesc')
     },
     {
       icon: Building2,
-      title: "Government Scheme Navigator",
-      description: "Navigate complex subsidies and schemes with simple explanations and direct application assistance"
+      title: t('govSchemesTitle'),
+      description: t('govSchemesDesc')
     },
     {
       icon: Mic,
-      title: "Voice-First Interface",
-      description: "Complete voice interaction in Hindi, Kannada, Marathi, and other local languages with natural responses"
+      title: t('voiceUITitle'),
+      description: t('voiceUIDesc')
     },
     {
       icon: MapPin,
-      title: "Local Expert Network",
-      description: "Find nearby Krishi shops and connect with certified agricultural experts in your region"
+      title: t('expertNetworkTitle'),
+      description: t('expertNetworkDesc')
     },
     {
       icon: Calendar,
-      title: "Expert Consultations",
-      description: "Book one-on-one sessions with agricultural scientists and extension officers for personalized advice"
+      title: t('weatherInsightsTitle'),
+      description: t('weatherInsightsDesc')
     }
   ];
 
@@ -48,10 +50,10 @@ const Features: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 lg:mb-20">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-textPrimary mb-6">
-            What KisanMitra AI Can Do for You
+            {t('featuresTitle')}
           </h2>
           <p className="text-xl lg:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Comprehensive farming assistance powered by artificial intelligence
+            {t('featuresSubtitle')}
           </p>
         </div>
         
@@ -76,7 +78,7 @@ const Features: React.FC = () => {
         
         <div className="text-center">
           <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center gap-3 mx-auto hover:shadow-lg transform hover:scale-105">
-            See full feature list
+            {t('seeFullFeatureList')}
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>

@@ -1,10 +1,10 @@
-import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import VoiceFirst from './components/VoiceFirst';
 import LiveInsights from './components/LiveInsights';
 import SchemeNavigator from './components/SchemeNavigator';
+import SequentialDemo from './components/SequentialDemo';
 import Technology from './components/Technology';
 import Testimonials from './components/Testimonials';
 import Team from './components/Team';
@@ -20,6 +20,7 @@ function App() {
       <VoiceFirst />
       <LiveInsights />
       <SchemeNavigator />
+      <SequentialDemo />
       <Technology />
       <Testimonials />
       <Team />

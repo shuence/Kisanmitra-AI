@@ -9,6 +9,13 @@ const Hero: React.FC = () => {
     }
   };
 
+  const scrollToDemo = () => {
+    const element = document.getElementById('demo');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-primary/10 via-background to-accent/10 flex items-center pt-20">
       <div className="absolute inset-0 bg-hero-pattern"></div>
@@ -34,7 +41,10 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 lg:gap-6 justify-center lg:justify-start">
-              <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-semibold text-lg lg:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3">
+              <button 
+                onClick={scrollToDemo}
+                className="bg-primary hover:bg-primary/90 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-xl font-semibold text-lg lg:text-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3"
+              >
                 <Play className="w-5 h-5 lg:w-6 lg:h-6" />
                 Try Demo
               </button>

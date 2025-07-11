@@ -71,22 +71,22 @@ KisaanMitra AI addresses critical challenges faced by Indian farmers: crop disea
 
 | Splash Screen | Home Screen | Language Selection |
 |:-------------:|:-----------:|:------------------:|
-| <img src="./screenshots/splash_screen.png" alt="Splash Screen" width="250"/> | <img src="./screenshots/home_screen.png" alt="Home Screen" width="250"/> | <img src="./screenshots/language_screen.png" alt="Language Selection" width="250"/> |
+| <img src="./public/screenshots/splash_screen.png" alt="Splash Screen" width="250"/> | <img src="./public/screenshots/home_screen.png" alt="Home Screen" width="250"/> | <img src="./public/screenshots/language_screen.png" alt="Language Selection" width="250"/> |
 | *Welcome screen with KisaanMitra branding* | *Main dashboard with quick access features* | *Multi-language support interface* |
 
 | Crop Diagnosis | Market Prices | Voice AI Assistant |
 |:--------------:|:-------------:|:------------------:|
-| <img src="./screenshots/crop_dignosis.png" alt="Crop Disease Detection" width="250"/> | <img src="./screenshots/market_price.png" alt="Market Prices" width="250"/> | <img src="./screenshots/voice_ai.png" alt="Voice AI" width="250"/> |
+| <img src="./public/screenshots/crop_dignosis.png" alt="Crop Disease Detection" width="250"/> | <img src="./public/screenshots/market_price.png" alt="Market Prices" width="250"/> | <img src="./public/screenshots/voice_ai.png" alt="Voice AI" width="250"/> |
 | *AI-powered crop disease detection* | *Real-time mandi price information* | *Voice-first interaction interface* |
 
 | Government Schemes | Nearby Shops | Weather Insights |
 |:------------------:|:------------:|:----------------:|
-| <img src="./screenshots/govt_schemes.png" alt="Government Schemes" width="250"/> | <img src="./screenshots/nearbyshop.png" alt="Nearby Shops" width="250"/> | <img src="./screenshots/weather.png" alt="Weather Insights" width="250"/> |
+| <img src="./public/screenshots/govt_schemes.png" alt="Government Schemes" width="250"/> | <img src="./public/screenshots/nearbyshop.png" alt="Nearby Shops" width="250"/> | <img src="./public/screenshots/weather.png" alt="Weather Insights" width="250"/> |
 | *Government scheme navigation* | *Local agri-shop discovery* | *Weather forecasts with farming advice* |
 
 | Expert Consultation | | |
 |:-------------------:|:-:|:-:|
-| <img src="./screenshots/expert_screen.png" alt="Expert Consultation" width="250"/> | | |
+| <img src="./public/screenshots/expert_screen.png" alt="Expert Consultation" width="250"/> | | |
 | *Connect with agricultural experts* | | |
 
 </div>

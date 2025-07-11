@@ -6,70 +6,70 @@ const demoSteps = [
     id: 1,
     title: "Welcome Screen",
     description: "App launches with KisaanMitra branding",
-    image: "/assets/screenshots/splash_screen.png",
+    image: "/screenshots/splash_screen.png",
     category: "Onboarding"
   },
   {
     id: 2,
     title: "Language Selection",
     description: "Choose your preferred local language",
-    image: "/assets/screenshots/language_screen.png",
+    image: "/screenshots/language_screen.png",
     category: "Onboarding"
   },
   {
     id: 3,
     title: "Dashboard",
     description: "Access all farming tools from one place",
-    image: "/assets/screenshots/home_screen.png",
+    image: "/screenshots/home_screen.png",
     category: "Navigation"
   },
   {
     id: 4,
     title: "Voice Assistant",
     description: "Ask questions in your language",
-    image: "/assets/screenshots/voice_ai.png",
+    image: "/screenshots/voice_ai.png",
     category: "AI Features"
   },
   {
     id: 5,
     title: "Crop Disease Detection",
     description: "Upload crop photo for AI analysis",
-    image: "/assets/screenshots/crop_dignosis.png",
+    image: "/screenshots/crop_dignosis.png",
     category: "AI Features"
   },
   {
     id: 6,
     title: "Market Prices",
     description: "Real-time mandi price information",
-    image: "/assets/screenshots/market_price.png",
+    image: "/screenshots/market_price.png",
     category: "Information"
   },
   {
     id: 7,
     title: "Weather Insights",
     description: "Weather forecasts with farming advice",
-    image: "/assets/screenshots/weather.png",
+    image: "/screenshots/weather.png",
     category: "Information"
   },
   {
     id: 8,
     title: "Government Schemes",
     description: "Discover applicable subsidies",
-    image: "/assets/screenshots/govt_schemes.png",
+    image: "/screenshots/govt_schemes.png",
     category: "Support"
   },
   {
     id: 9,
     title: "Nearby Shops",
     description: "Find local agricultural stores",
-    image: "/assets/screenshots/nearbyshop.png",
+    image: "/screenshots/nearbyshop.png",
     category: "Support"
   },
   {
     id: 10,
     title: "Expert Consultation",
     description: "Connect with agricultural experts",
-    image: "/assets/screenshots/expert_screen.png",
+    image: "/screenshots/expert_screen.png",
     category: "Support"
   }
 ];
